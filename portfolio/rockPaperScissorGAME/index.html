@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1 class="heading">Let's Play Rock, Paper, Scissors!</h1>
+
+        <main>
+            <!-- rules box -->
+            <details class="rules-box">
+                <summary>Rules to the game</summary>
+                <p class="rule">You will be playing against the computer</p>
+                <p class="rule">You can choose between Rock, Paper, and Scissors.</p>
+                <p class="rule">The first one to three points wins</p>
+                <p class="rule">Here are the rules to getting a point in the game:</p>
+                <ul>
+                    <li>Rock beats Scissors</li>
+                    <li>Scissors beats Paper</li>
+                    <li>Paper beats Rock</li>
+                </ul>
+                <p class="rule">If the player and computer choose the same option (Ex. Paper and Paper), then no one gets the point.</p>
+                
+            </details>
+
+            <!-- playes scores -->
+            <div class="score-container">
+                <strong>Player Score : <span class="score" id="player-score">0</span></strong>
+                <strong>Computer Score : <span class="score" id="computer-score">0</span></strong>
+            </div>
+
+            <!-- Option Buttons  -->
+            <section class="option-container">
+                <h2>Choose an Option : </h2>
+                <div class="btn-container">
+                    <button id="rock-btn" class="btn" value="Rock">Rock</button>
+                    <button id="paper-btn" class="btn" value="Paper">Paper</button>
+                    <button id="scissors-btn" class="btn" value="Scissors">Scissors</button>
+                </div>
+            </section>
+
+            <!-- results -->
+            <div class="result-container">
+                <p class="result-msg"></p>
+                <p class="winner-msg"></p>
+                <button class="btn" id="reset-game-btn" value="Play again">Play again?</button>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

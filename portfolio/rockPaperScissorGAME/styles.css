@@ -1,0 +1,59 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a23;
+  color: #ffffff;
+  text-align: center;
+}
+
+.game-container {
+  padding-top: 20px;
+}
+
+.btn {
+  background-color: #feac32;
+  cursor: pointer;
+  margin: 10px;
+  padding: 0 20px;
+}
+.btn :hover {
+  background-image: linear-gradient(#ffcc4c, #f89808);
+}
+
+.rules-box {
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 10px 0;
+  color: #0a0a23;
+  width: 60%;
+  border-radius: 15px;
+  border: 5px solid #f1be32;
+}
+.rules-box .rule {
+  margin: 10px 0;
+}
+.rules-box ul li {
+  list-style-type: none;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.result-container .btn {
+  position: absolute;
+  visibility: hidden;
+}
+
+.option-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
