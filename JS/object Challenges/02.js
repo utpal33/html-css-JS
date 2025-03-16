@@ -37,7 +37,7 @@ const userCountOfSameLocation = users.reduce((acc, user)=>{
 }, {})
 
 
-// firstName of all users who's age<30
+//    
 const firstName = users.filter((user)=> user.age<30).map((user)=> user.firstName)
 // console.log(firstName);
 

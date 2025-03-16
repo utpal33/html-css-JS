@@ -32,5 +32,18 @@ let mymap = new Map([
 // console.log(mymap.has(false));
 
 
-console.log(mymap.name);
+// create a copy of another map but it is pass by value. original map does not affect when new one changes
+    /* const userMap = new Map(mymap)
 
+    userMap.delete(2)
+    console.log(userMap);
+    console.log(mymap); */
+
+
+const userMap = {1:"utpal", 2:"kant", 3:"bihar", 4:"bengaluru", 5:"chennai"}
+
+// console.log(Object.fromEntries(Object.entries(userMap)));
+
+for (let entry of Object.entries(userMap)){
+    console.log(entry);
+}

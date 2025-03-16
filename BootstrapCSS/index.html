@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- screen sizes 
+    
+        XXl ---  >= 1400                      -- container-xxl
+        XL  ---  min(1200px)  max(1399px)     -- container-xl
+        lg  ---  min(992px)  to max(1199px)   -- container-lg
+        md  ---  min(768px)  to max(991px)    -- container-md
+        sm  ---  min(576px)  to max(767px)    -- container-sm
+        xs  ---  max(575px)                   -- container
+    -->
+
+    <!-- container-fluid is used in  mobile to xxl screens take 100% width -->
+    <!-- cointainer takes 100% width in mobile only
+         took 540px in  >= 575  and <=767-->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!-- here  one row divide in 12 columns and you can give any whole number to any column to give the column size. -->
+                <div class="col-12 col-lg-3 col-md-4"></div>
+                <div class="col-12 col-lg-3 col-md-4"></div>
+                <div class="col-12 col-lg-3 col-md-4"></div>
+                <div class="col-12 col-lg-3 "></div>
+            </div>
+            <!-- what if the we want 5 columns in one row or the number of columns which dose not divide 12 to decide col sizes -->
+            <!-- in order to do that we use Auto-layout columns  i.e use only .col class -->
+            <!-- col will automatically decide its sizes -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+            <!--  but in order to make page responsive we use row-cols-lg-3 like this to give what layout we want on which screen -->
+            
+            <!-- gutter classes :- used to give padding between columns gx and gy -->
+            <div class></div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
